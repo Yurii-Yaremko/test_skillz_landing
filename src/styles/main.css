@@ -9,7 +9,7 @@
   position: absolute;
   content: "";
   display: block;
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #57D9A6;
   width: -moz-fit-content;
   width: fit-content;
   width: 0;
@@ -40,11 +40,11 @@
 }
 
 .header__top--dark {
-  padding: 24px 82px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1C1C33;
+  padding: 24px 82px;
 }
 
 .header__all {
@@ -70,6 +70,37 @@
 .courses {
   padding: 144px 0 144px 0;
   background: #23233B;
+}
+.courses__position {
+  font-size: 44px;
+  line-height: 1.2;
+  display: inline-block;
+  position: relative;
+}
+.courses__position--color {
+  color: #1C1C33;
+}
+.courses__position::after {
+  position: absolute;
+  content: "";
+  display: inline;
+  border-bottom: 2px solid #57D9A6;
+  bottom: -7px;
+  left: 25%;
+  width: 50%;
+  padding-bottom: 68px;
+}
+.courses__position--next {
+  margin-bottom: 68px;
+}
+.courses__position--next::after {
+  position: absolute;
+  content: "";
+  display: inline;
+  border-bottom: 2px solid #57D9A6;
+  bottom: -7px;
+  left: 0%;
+  width: 25%;
 }
 .courses__color {
   background-color: #F6F6F8;
@@ -133,7 +164,6 @@
 .product__price {
   display: flex;
   flex-direction: row;
-  font-weight: 400;
   font-size: 22px;
   line-height: 1.2;
   color: #1C1C33;
@@ -141,11 +171,9 @@
   gap: 8px;
 }
 .product__price--not {
-  margin: 0;
   color: #B2B2BF;
 }
 .product__price--all {
-  margin: 0;
   color: #1C1C33;
 }
 .product__learn {
@@ -169,38 +197,6 @@
   bottom: -7px;
   left: 0;
   padding-bottom: 68px;
-}
-
-.courses__position {
-  font-size: 44px;
-  line-height: 1.2;
-  display: inline-block;
-  position: relative;
-}
-.courses__position--color {
-  color: #1C1C33;
-}
-.courses__position::after {
-  position: absolute;
-  content: "";
-  display: inline;
-  border-bottom: 2px solid #57D9A6;
-  bottom: -7px;
-  left: 25%;
-  width: 50%;
-  padding-bottom: 68px;
-}
-.courses__position--next {
-  margin-bottom: 68px;
-}
-.courses__position--next::after {
-  position: absolute;
-  content: "";
-  display: inline;
-  border-bottom: 2px solid #57D9A6;
-  bottom: -7px;
-  left: 0%;
-  width: 25%;
 }
 
 .recommendations {
