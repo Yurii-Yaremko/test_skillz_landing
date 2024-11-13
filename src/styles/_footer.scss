@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        padding: 144px 34px;
+    }
+
+    &__space {
+        display: flex;
+        flex-direction: row;
+        padding: 124px 48px 0 48px;
+        gap: 48px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        color: $second_color;
+
+        &--null {
+           min-width: 285px;
+        }
+
+        &--space {
+            padding-bottom: 25px;
+        }
+
+        &--bold {
+            font-weight: 700;
+            color: $main_color;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        padding: 16px 82px;
+        gap: 32px;
+        background: $second_dark_color;
+    }
+}
