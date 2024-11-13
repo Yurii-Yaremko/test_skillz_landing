@@ -32,6 +32,11 @@ html {
     color: $gray_color;
     line-height: 1.6;
 
+    &__center {
+      display: flex;
+      justify-content: center;
+    }
+
     &__top {
       padding-top: 22px;
     }
@@ -108,9 +113,11 @@ html {
   .button {
     background-color: $green_color;
     color: $dark_color;
+    
     box-sizing: border-box;
     border-color: $green_color;
   
+    text-transform: uppercase;
     
     height: 60px;
     border-radius: 4px;
