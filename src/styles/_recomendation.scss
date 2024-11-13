@@ -1,0 +1,17 @@
+.recommendations {
+    display: flex;
+    flex-direction: row;
+        
+    &__all {
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      &__bottom {
+        background-color: $dark_color;
+        padding: 144px 48px 48px;
+        
+      }
+}
+

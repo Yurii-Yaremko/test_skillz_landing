@@ -1,0 +1,37 @@
+.nav {
+    &__link {
+      color: $main_color;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 27px;
+      position: relative;
+  
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        border-bottom: 1px solid yellow;
+        width: fit-content;
+        width: 0;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+    }
+  
+    &__item {
+      display: inline;
+      position: relative;
+    }
+  }
